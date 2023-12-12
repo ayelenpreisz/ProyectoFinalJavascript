@@ -75,8 +75,9 @@ a:hover{
 .seccion-nosotros h1{
     display: flex;
     justify-content: center;
-    color: white;
-    font-size:x-large
+    color: yellow;
+    font-size:x-large;
+    text-decoration: underline;
 }
 
 h2{
@@ -107,6 +108,14 @@ section div p {
     line-height: 40px;
     text-align: center;
 }
+/*SECCION SERVICIOS*/
+.seccion-servicios p {
+    font-family: arial, helvetica; 
+    color: white;
+    font-size:x-large;
+    text-align: center;
+}
+
 
 /*SECCION PIE DE PAGINA*/
 .wha{
@@ -118,6 +127,7 @@ section div p {
 .div-wha{
     display: flex;
    align-items: center;
+   color: white;
 }
 
 .face{
@@ -148,8 +158,23 @@ section div p {
     justify-content: center;
     flex-wrap: wrap;
 }
+.seccion-clientes h3{
+    color: yellow;
+    text-align: center;
+    text-decoration: underline;
+}
+.seccion-clientes p{
+    font-family: arial, helvetica; 
+    color: white;
+    font-size:x-large;
+    text-align: center;
+}
+ h4{
+    color: white;
+    font-size: large;
+    font-family: arial, helvetica; 
 
-
+ }
 
 /*ENLACES PROVEEDORES, Y FOOTER*/
 #enlace{
@@ -162,8 +187,19 @@ section div p {
         font-family:impact;
         font-size: x-small;
       }
+.provedores p{
+    font-family: arial, helvetica; 
+    color: white;
+    font-size:x-large;
+    text-align: center;
+}
 
+.provedores h4{
+    color: white;
+    font-size: large;
+    font-family: arial, helvetica; 
 
+ }
 /*MEDIA QERY TABLET*/
 @media screen and  (min-width: 600px ){
    
@@ -180,7 +216,7 @@ section div p {
         border-radius:10%;
         flex-wrap: wrap;
          }
-        
+   
 }
 /*MEDIA QERY DESKTOP*/
 @media screen and (min-width: 1024px) {
