@@ -1,0 +1,43 @@
+
+@import "secundarios/variables";
+ /*SECCION NOSOTROS*/
+
+ .seccion-nosotros{
+    h2{
+        font-family: Arial, Helvetica ;
+        color:$color-titulos;
+        font-size: large; 
+        background-color: black;
+        text-align: center;
+    }
+    h1{
+        display: flex;
+        justify-content: center;
+        color: $color-titulos;
+        font-size:x-large;
+        text-decoration: underline;
+    }
+    #nosotros{
+        font-family: Arial, Helvetica; 
+        color: white;
+        font-size:x-large;
+        text-align: center;
+    }
+    div{
+        display: flex;
+        padding: 30px;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        img{
+            width:40%;
+            border-radius: 10px;
+        }
+        p { @extend .presentacion-provedores;
+            width: 600px;
+            padding: 20px;
+            line-height: 40px;
+            text-align: center;
+        }
+    }
+  }

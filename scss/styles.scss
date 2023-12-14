@@ -1,3 +1,257 @@
-h1{
-    color: red;
+@import "secundarios/variables";
+@import "secundarios/nosotros";
+
+/*RESET UNIVERSAL*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+/*ESTILOS DEL BODY*/
+  body{
+    background-image: url(../Img/fondo1prueba.png);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+  }
+  
+  .grid-container {
+    display: grid;
+    border: 300px, solid red;
+    grid-template-rows: repeat(4,150px);
+    grid-template-columns: repeat(4, 20px);
+  }
+  .grid-item{
+    border: 3px, solid pink;
+  }
+  
+  /**ESTILOS SECCION NAV*/
+  header{
+     display: flex;
+     justify-content: space-between; 
+     align-items: center;
+     background-color: black; 
+     .logo-principal{
+            height: 9%;
+            width: 10%;
+            border-radius:5%;
+            display: flex; 
+        } 
+     nav{
+           ul{
+              display:  flex;
+              font-style: italic;
+              gap: 3px;
+              font-size:x-small;
+              li{
+                  border: solid white;
+                  padding: 10px;
+                  a{
+                        color: $color-titulos;
+                        background-color: black;
+                        text-align: center;
+                        text-decoration: none;
+                        display: flex;
+                        a:hover{
+                             color: white;
+                            }
+                    }
+                }
+            }
+       }
+  }
+
+ 
+/*SECCION PIE DE PAGINA*/
+  footer{
+        h2{
+            font-family: arial, helvetica; 
+            color:$color-titulos;
+            font-size: large; 
+            background-color: black;
+            text-align: center;
+            }
+        .div-wha{
+            display: flex;
+            align-items: center;
+       
+                .wha{
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                }
+                a{
+                    color: black;
+                    background-color: $colores-etiquetas-a;
+                    padding: 5px;
+                    margin: 5px;
+                    border: 1px solid black;
+                    font-family:impact;
+                    font-size: x-small;
+                }
+            }
+         .div-face{
+             display: flex;
+             align-items: center;
+                .face{
+                    height: 50px;
+                    width: 50px; 
+                    border-radius: 50%;
+                }
+                a{
+                    color:black;
+                    background-color: $colores-etiquetas-a;
+                    padding: 5px;
+                    margin: 5px;
+                    border: 1px solid black;
+                    font-family:impact;
+                    font-size: x-small;
+                }
+        
+            }
+         .div-insta{
+             display: flex;
+             align-items: center;
+                .insta{
+                 height: 50px;
+                 width: 50px;
+                 border-radius: 50%;
+                }
+                a{
+                    color:black;
+                    background-color: $colores-etiquetas-a;
+                    padding: 5px;
+                    margin: 5px;
+                    border: 1px solid black;
+                    font-family:impact;
+                    font-size: x-small;
+                }
+            }
+   
+  }
+  /*SECCION PROVEEDORES*/
+  .provedores {
+    h2{
+        font-family: arial, helvetica; 
+         color:$color-titulos;
+        font-size: large; 
+        background-color: black;
+        text-align: center;
+    }
+    .presentacion-provedores{
+        font-family: arial, helvetica; 
+        color: white;
+        font-size:x-large;
+        text-align: center;
+    }
+    h4{
+        color: white;
+        font-size: large;
+        font-family: arial, helvetica; 
+
+    }
+    a{
+    color:black;
+        background-color: $colores-etiquetas-a;
+        padding: 5px;
+        margin: 5px;
+        border: 1px solid black;
+        font-family:impact;
+        font-size: x-small;
+    }
+  }
+
+
+  /*SECCION SERVICIOS*/
+.seccion-servicios {
+    p{
+        font-family: arial, helvetica; 
+        color: white;
+        font-size:x-large;
+        text-align: center;
+    }
+    h2{
+        font-family: arial, helvetica; 
+         color:$color-titulos;
+        font-size: large; 
+        background-color: black;
+        text-align: center;
+    }
+}
+
+/*SECCION CLIENTES*/
+.seccion-clientes {
+ h2{
+    font-family: arial, helvetica; 
+    color:$color-titulos;
+    font-size: large; 
+    background-color: black;
+    text-align: center;
+    }
+ h3{
+    color: $color-titulos;
+    text-align: center;
+    text-decoration: underline;
+
+ }
+ p{
+    font-family: arial, helvetica; 
+    color: white;
+    font-size:x-large;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+}
+.seccion-proyectos{
+    .proyectos{
+    color: white;
+    font-size: large;
+    font-family: arial, helvetica; 
+
+    }
+}
+
+/*MEDIA QERY TABLET*/
+@media screen and  (min-width: 600px ){
+   
+    .clientes img{
+        width: 60%;
+        height: 50%;
+        border-radius:10%;
+        flex-wrap: wrap;
+         }
+   
+}
+/*MEDIA QERY DESKTOP*/
+@media screen and (min-width: 1024px) {
+    .servicios{
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       grid-template-rows: repeat(2,auto);
+       justify-content: center;
+       align-items: center;
+       
+        
+    }
+    .seccion-servicios {
+        width: 100%;  /*ancho y alto */
+        height: 100%;
+        border-radius:10%;
+        padding: 10px 10px 10px 10px;
+        margin-bottom: 2rem;    
+    }
+    
+
+    .clientes{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);  
+        img{
+            width: 100%;  /*ancho y alto */
+            height: 100%;
+            border-radius:10%;
+            margin-bottom: 2rem;
+        }     
+    }
 }
