@@ -1,0 +1,44 @@
+{
+    "aires_acondicionados": [
+      {
+        "modelo": "AireCool-1000",
+        "marca": "AireCool",
+        "tipo": "Split",
+        "capacidad_en_btus": 12000,
+        "eficiencia_energetica": "A",
+        "precio": 599.99
+      },
+      {
+        "modelo": "FrostyFreeze-2000",
+        "marca": "FrostyFreeze",
+        "tipo": "Ventana",
+        "capacidad_en_btus": 8000,
+        "eficiencia_energetica": "B",
+        "precio": 399.99
+      },
+      {
+        "modelo": "EcoBreeze-3000",
+        "marca": "EcoBreeze",
+        "tipo": "Portátil",
+        "capacidad_en_btus": 10000,
+        "eficiencia_energetica": "A+",
+        "precio": 499.99
+      },
+      {
+        "modelo": "York-100",
+        "marca": "york",
+        "tipo": "Portátil",
+        "capacidad_en_btus": 10000,
+        "eficiencia_energetica": "B",
+        "precio": 699.99
+      },
+      {
+        "modelo": "Inverter-3000",
+        "marca": "Inverter",
+        "tipo": "Portátil",
+        "capacidad_en_btus": 12000,
+        "eficiencia_energetica": "A+",
+        "precio": 10000.99
+      }
+    ]
+  }

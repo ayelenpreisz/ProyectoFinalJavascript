@@ -8,9 +8,11 @@
    <link rel="stylesheet" href="./css/styles1.css">
 </head>
 <body>
-  
+<!-- PRIMERA PRE-ENTREGA -->
+
+<!-- SEGUNA PRE-ENTREGA -->
     <header class="header-nav">
-     <img class= "logo-principal"src="./Img/WhatsApp Image 2023-09-28 at 10.47.00.jpeg" alt=""> 
+     <img class= "logo-principal"src="./Img/logoprincipal.PNG" alt=""> 
      
      <nav >
         <ul>
@@ -23,6 +25,26 @@
      </nav> 
     </header>
 
+    <h1 id="titulo">Calculo aproximado del presupuesto para instalar un aire</h1>
+    <p id="Estilo-parrado-subtitulo"> El siguiente es un calculo aproximado para que tenga en cuenta como referencia para instalar un aire acondicionado. El mismo puede variar de acuerdo a los metros de cañeria que se utilizan al momento de la instalacion.</p>
+    <label for="largo">Ingrese el largo de su habitacion(metros):</label>
+    <input type="number" id="largo"><br><br>
+
+    <label for="ancho">Ingrese el ancho de su habitacion(metros):</label>
+    <input type="number" id="ancho"><br><br>
+
+    <label for="alto">Ingrese el alto de su habitacion(metros):</label>
+    <input type="number" id="alto"><br><br>
+
+    <button onclick="calcular()">Calcular metros cúbicos y costo</button><br><br>
+
+    <p id="resultado"></p>
+     
+    <button id="filtrarBtn">Mostrar aires eficientes (Eficiencia A)</button>
+    <button id="calcularBtn">Calcular precio promedio</button>
+    <div id="resultados"></div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 </html>

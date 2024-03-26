@@ -1,51 +1,52 @@
 /*SECCION NOSOTROS*/
-.seccion-nosotros h2 {
-  font-family: Arial, Helvetica;
-  color: #D7DF01;
-  font-size: large;
-  background-color: black;
-  text-align: center; }
-
-.seccion-nosotros h1 {
-  display: flex;
-  justify-content: center;
-  color: #D7DF01;
-  font-size: x-large;
-  text-decoration: underline; }
-
-.seccion-nosotros #nosotros {
-  font-family: Arial, Helvetica;
-  color: white;
-  font-size: x-large;
-  text-align: center; }
-
-.seccion-nosotros div {
-  display: flex;
-  padding: 30px;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center; }
-  .seccion-nosotros div img {
-    width: 40%;
-    border-radius: 10px; }
-  .seccion-nosotros div p {
-    width: 600px;
-    padding: 20px;
-    line-height: 40px;
+.seccion-nosotros {
+  padding: 0.5%; }
+  .seccion-nosotros h2 {
+    font-family: Arial, Helvetica;
+    color: #D7DF01;
+    font-size: large;
+    background-color: #404040;
     text-align: center; }
-
-/*RESET UNIVERSAL*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+  .seccion-nosotros h1 {
+    display: flex;
+    background-color: #666666;
+    justify-content: center;
+    color: #D7DF01;
+    font-size: x-large;
+    text-decoration: underline;
+    opacity: 90%; }
+  .seccion-nosotros #nosotros {
+    font-family: Arial, Helvetica;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    border-radius: 3%; }
+  .seccion-nosotros div {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .seccion-nosotros div img {
+      width: 40%;
+      border-radius: 10px; }
+    .seccion-nosotros div p {
+      width: 600px;
+      padding: 20px;
+      line-height: 40px;
+      text-align: center;
+      background-color: #666666;
+      opacity: 90%;
+      padding: 1%; }
 
 /*ESTILOS DEL BODY*/
 body {
-  background-image: url(../Img/fondo1prueba.png);
+  background-image: url(../Img/PruebaFondo1.jpg);
   background-position: center;
   background-repeat: repeat;
-  background-size: cover; }
+  background-size: cover;
+  padding: 0.5%;
+  margin: 0.5%; }
 
 .grid-container {
   display: grid;
@@ -62,6 +63,8 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: black; }
+  header img {
+    padding: 0.5%; }
   header .logo-principal {
     height: 9%;
     width: 10%;
@@ -85,129 +88,145 @@ header {
           color: white; }
 
 /*SECCION PIE DE PAGINA*/
-footer h2 {
-  font-family: arial, helvetica;
-  color: #D7DF01;
-  font-size: large;
-  background-color: black;
-  text-align: center; }
-
-footer .div-wha {
-  display: flex;
-  align-items: center; }
-  footer .div-wha .wha {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%; }
-  footer .div-wha a {
-    color: black;
-    background-color: rgba(255, 255, 0, 0.608);
-    padding: 5px;
-    margin: 5px;
-    border: 1px solid black;
-    font-family: impact;
-    font-size: x-small; }
-
-footer .div-face {
-  display: flex;
-  align-items: center; }
-  footer .div-face .face {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%; }
-  footer .div-face a {
-    color: black;
-    background-color: rgba(255, 255, 0, 0.608);
-    padding: 5px;
-    margin: 5px;
-    border: 1px solid black;
-    font-family: impact;
-    font-size: x-small; }
-
-footer .div-insta {
-  display: flex;
-  align-items: center; }
-  footer .div-insta .insta {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%; }
-  footer .div-insta a {
-    color: black;
-    background-color: rgba(255, 255, 0, 0.608);
-    padding: 5px;
-    margin: 5px;
-    border: 1px solid black;
-    font-family: impact;
-    font-size: x-small; }
+footer {
+  padding: 0.5%; }
+  footer h2 {
+    font-family: arial, helvetica;
+    color: #D7DF01;
+    font-size: large;
+    background-color: black;
+    text-align: center; }
+  footer .div-wha {
+    display: flex;
+    align-items: center; }
+    footer .div-wha .wha {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%; }
+    footer .div-wha a {
+      color: black;
+      background-color: rgba(255, 255, 0, 0.608);
+      padding: 5px;
+      margin: 5px;
+      border: 1px solid black;
+      font-family: impact;
+      font-size: x-small; }
+  footer .div-face {
+    display: flex;
+    align-items: center; }
+    footer .div-face .face {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%; }
+    footer .div-face a {
+      color: black;
+      background-color: rgba(255, 255, 0, 0.608);
+      padding: 5px;
+      margin: 5px;
+      border: 1px solid black;
+      font-family: impact;
+      font-size: x-small; }
+  footer .div-insta {
+    display: flex;
+    align-items: center; }
+    footer .div-insta .insta {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%; }
+    footer .div-insta a {
+      color: black;
+      background-color: rgba(255, 255, 0, 0.608);
+      padding: 5px;
+      margin: 5px;
+      border: 1px solid black;
+      font-family: impact;
+      font-size: x-small; }
 
 /*SECCION PROVEEDORES*/
-.provedores h2 {
-  font-family: arial, helvetica;
-  color: #D7DF01;
-  font-size: large;
-  background-color: black;
-  text-align: center; }
-
-.provedores .presentacion-provedores, .provedores .seccion-nosotros div p, .seccion-nosotros div .provedores p {
-  font-family: arial, helvetica;
-  color: white;
-  font-size: x-large;
-  text-align: center; }
-
-.provedores h4 {
-  color: white;
-  font-size: large;
-  font-family: arial, helvetica; }
-
-.provedores a {
-  color: black;
-  background-color: rgba(255, 255, 0, 0.608);
-  padding: 5px;
-  margin: 5px;
-  border: 1px solid black;
-  font-family: impact;
-  font-size: x-small; }
+.provedores {
+  padding: 0.5%; }
+  .provedores h2 {
+    font-family: arial, helvetica;
+    color: #D7DF01;
+    font-size: large;
+    background-color: #404040;
+    text-align: center; }
+  .provedores .presentacion-provedores, .provedores .seccion-nosotros div p, .seccion-nosotros div .provedores p {
+    font-family: arial, helvetica;
+    color: white;
+    font-size: x-large;
+    text-align: justify;
+    background-color: #666666;
+    opacity: 90%;
+    padding: 1%;
+    border-radius: 3%; }
+  .provedores h4 {
+    color: #D7DF01;
+    font-size: large;
+    font-family: arial, helvetica;
+    display: inline;
+    background-color: black; }
+  .provedores a {
+    color: black;
+    background-color: rgba(255, 255, 0, 0.608);
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    font-family: impact;
+    font-size: x-small; }
 
 /*SECCION SERVICIOS*/
-.seccion-servicios p {
-  font-family: arial, helvetica;
-  color: white;
-  font-size: x-large;
-  text-align: center; }
-
-.seccion-servicios h2 {
-  font-family: arial, helvetica;
-  color: #D7DF01;
-  font-size: large;
-  background-color: black;
-  text-align: center; }
+.seccion-servicios {
+  padding: 0.5%; }
+  .seccion-servicios p {
+    font-family: arial, helvetica;
+    color: white;
+    font-size: x-large;
+    text-align: justify;
+    background-color: #666666;
+    opacity: 90%;
+    padding: 1%;
+    border-radius: 3%; }
+  .seccion-servicios h2 {
+    font-family: arial, helvetica;
+    color: #D7DF01;
+    font-size: large;
+    background-color: #404040;
+    text-align: center; }
 
 /*SECCION CLIENTES*/
-.seccion-clientes h2 {
-  font-family: arial, helvetica;
-  color: #D7DF01;
-  font-size: large;
-  background-color: black;
-  text-align: center; }
-
-.seccion-clientes h3 {
-  color: #D7DF01;
-  text-align: center;
-  text-decoration: underline; }
-
-.seccion-clientes p {
-  font-family: arial, helvetica;
-  color: white;
-  font-size: x-large;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; }
+.seccion-clientes {
+  padding: 0.5%; }
+  .seccion-clientes h2 {
+    font-family: arial, helvetica;
+    color: #D7DF01;
+    font-size: large;
+    background-color: #404040;
+    text-align: center; }
+  .seccion-clientes h3 {
+    color: #D7DF01;
+    text-align: center;
+    text-decoration: underline;
+    background-color: #666666;
+    opacity: 90%; }
+  .seccion-clientes p {
+    font-family: arial, helvetica;
+    color: white;
+    font-size: x-large;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #666666;
+    opacity: 90%;
+    padding: 1%;
+    border-radius: 3%; }
 
 .seccion-proyectos .proyectos {
-  color: white;
+  color: #D7DF01;
   font-size: large;
-  font-family: arial, helvetica; }
+  font-family: arial, helvetica;
+  background-color: black; }
 
 /*MEDIA QERY TABLET*/
 @media screen and (min-width: 600px) {
